@@ -8,6 +8,7 @@ function getCourseInfo(courseCode) {
 	.then(res => res.json())
 	.then(res => course = res.data.course[0]);
 	
+	console.log(course);
 	return course;
 }
 
@@ -24,6 +25,10 @@ function getCourseCode(url) {
 }
 
 function popup(link) {
+	let card = document.createElement('img');
+	card.src = 'https://variety.com/wp-content/uploads/2017/01/obama-final-tweet-1.jpg';
+	link.appendChild(card);
+	
 	console.log(getCourseCode(link.href));
 }
 
@@ -32,9 +37,5 @@ let links = document.getElementsByTagName('a');
 for (let i = 0; i < links.length; i++) {
 	if (isValidCourse(links[i].href)) {
 		links[i].addEventListener("mouseover", () => popup(links[i]));
-		
-		let card = document.createElement('img');
-		card.src = 'https://variety.com/wp-content/uploads/2017/01/obama-final-tweet-1.jpg';
-		links[i].appendChild(card);
 	}
 }
