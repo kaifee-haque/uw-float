@@ -4,12 +4,15 @@ a {
 
 a>img {
 	display: none;
+	opacity: 0;
+	transition: opacity 1s;
 }
 a:hover>img {
+	opacity: 1;
 	display: inline-block;
 	width: 512px;
 	position: absolute;
-	top: 32px;
+	top: 16px;
 	left: 32px;
 	z-index: 1000;
 	border-style: solid;
