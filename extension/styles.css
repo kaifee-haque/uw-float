@@ -1,0 +1,18 @@
+a {
+	position: relative;
+}
+
+a>img {
+	display: none;
+}
+a:hover>img {
+	display: inline-block;
+	width: 512px;
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	z-index: 1000;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}

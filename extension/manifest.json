@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "UW Float", 
+    "description": "UW Flow link previews",
+    "version": "0.1",
+    "author": "Kaifee Haque",
+	
+	"web_accessible_resources": ["hover.html"],
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "matches": ["http://ugradcalendar.uwaterloo.ca/*"]
+    }]
+}
