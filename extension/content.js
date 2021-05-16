@@ -7,8 +7,6 @@ function getCourseInfo(courseCode) {
 	})
 	.then(res => res.json())
 	.then(res => course = res.data.course[0]);
-	
-	console.log(course);
 	return course;
 }
 
@@ -25,11 +23,35 @@ function getCourseCode(url) {
 }
 
 function popup(link) {
-	let card = document.createElement('img');
-	card.src = 'https://variety.com/wp-content/uploads/2017/01/obama-final-tweet-1.jpg';
-	link.appendChild(card);
+	course = getCourseInfo(getCourseCode(link.href));
+	console.log("course: " + course.code);
 	
-	console.log(getCourseCode(link.href));
+	// Preview card
+	let card = document.createElement('div');
+	link.appendChild(card);
+	card.removeAttribute('href');
+	
+	// Course code
+	let title = document.createElement('H1');
+	title.innerHTML = course.code.toUpperCase();
+	card.append(title);
+	
+	// Full course name
+	let subtitle = document.createElement('H2');
+	subtitle.innerHTML = course.name;
+	card.append(subtitle);
+	
+	// Course description
+	let description = document.createElement('p');
+	description.innerHTML = course.description;
+	card.append(description);
+	
+	/*let liked = document.createElement('p');
+	title.innerHTML = course.rating.liked * 100;
+	card.append(liked);*/
+
+	/*let element = document.createElement('');
+	card.append(image);*/
 }
 
 // Store each link, loop over them and add a hover listener if it's a valid course
