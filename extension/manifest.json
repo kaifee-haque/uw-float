@@ -6,7 +6,7 @@
     "version": "0.1",
     "author": "Kaifee Haque",
 
-	"permissions": ["https://uwflow.com/*"],
+	"permissions": ["https://uwflow.com/graphql"],
     "content_scripts": [{
         "css": ["styles.css"],
         "js": ["content.js"],
