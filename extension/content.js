@@ -24,7 +24,6 @@ function getCourseCode(url) {
 
 function popup(link) {
 	course = getCourseInfo(getCourseCode(link.href));
-	console.log("course: " + course.code);
 	
 	// Preview card
 	let card = document.createElement('div');
@@ -33,7 +32,7 @@ function popup(link) {
 	
 	// Course code
 	let title = document.createElement('H1');
-	title.innerHTML = course.code.toUpperCase();
+	title.innerHTML = course.code.match(/[a-z]+|[^a-z]+/gi).join(' ').toUpperCase();
 	card.append(title);
 	
 	// Full course name
