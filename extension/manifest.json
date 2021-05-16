@@ -5,8 +5,8 @@
     "description": "UW Flow link previews",
     "version": "0.1",
     "author": "Kaifee Haque",
-	
-	"web_accessible_resources": ["hover.html"],
+
+	"permissions": ["https://uwflow.com/*"],
     "content_scripts": [{
         "css": ["styles.css"],
         "js": ["content.js"],
