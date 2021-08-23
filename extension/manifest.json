@@ -3,7 +3,7 @@
  
     "name": "UW Float", 
     "description": "UW Flow link previews",
-    "version": "0.1",
+    "version": "0.2",
     "author": "Kaifee Haque",
 
 	"permissions": ["https://uwflow.com/graphql"],
