@@ -1,3 +1,4 @@
+/* Custom fonts */
 @font-face {
   font-family: 'Anderson Grotesk';
   src: local('Anderson Grotesk UltraBold'),
@@ -22,6 +23,7 @@
 	font-weight: 500;
 }
 
+/* Info card */
 .Course {
 	display: inline;
 	position: relative;
@@ -43,7 +45,7 @@
 	background-color: #042049;
 	box-shadow: 0px 0px 75px -15px black;
 	color: #fff;
-	border-radius: 7px;
+	border-radius: 7.5px;
 	position: absolute;
 	overflow-y: scroll;
 	z-index: 100;
@@ -86,9 +88,15 @@
 	padding: 0px;
 }
 
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
   background: #dfe1e5;
+  visibility: visible;
+}
+
+::-webkit-scrollbar {
+	visibility: visible;
 }
 
 ::-webkit-scrollbar:horizontal {
