@@ -14,5 +14,11 @@
 					"https://ugradcalendar.uwaterloo.ca/*"],
         "run_at": "document_start"
     }],
-	"web_accessible_resources": ["fonts/*"]
+	"web_accessible_resources": ["fonts/*"],
+    "icons": {
+        "16": "images/float_16.png",
+        "32": "images/float_32.png",
+        "64": "images/float_64.png",
+        "128": "images/float_128.png"
+    }
 }

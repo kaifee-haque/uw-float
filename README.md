@@ -14,7 +14,7 @@ This Chrome extension allows you to view information about a course from UW Flow
 ## To-Do
 🔲 Add course stats (liked, easy, useful) and graphic \
 🔲 Add prerequisites, corequisites and antirequisites \
-🔲 Change UI to match the visual style of UW Flow (and add a favicon) \
+🔲 Change UI to match the visual style of UW Flow \
 🔲 Allow extension to support UW Flow URLs and run on any website \
 🔲 Make info card position dependent on screen borders \
 
