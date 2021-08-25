@@ -1,3 +1,4 @@
+/* Custom fonts */
 @font-face {
   font-family: 'Anderson Grotesk';
   src: local('Anderson Grotesk UltraBold'),
@@ -22,66 +23,80 @@
 	font-weight: 500;
 }
 
-a {
+/* Info card */
+.Course {
+	display: inline;
 	position: relative;
 }
 
-a>div {
-	display: none;
-	/*box-shadow: 0px 0px 3px black;*/
-	opacity: 0;
-	transition: opacity 1s;
-}
-a:hover>div {
+.Course:hover > .InfoCard {
+	visibility: visible;
 	opacity: 1;
-	background-color: #042049;
-	display: inline-block;
-	width: 480px;
-	height: 256px;
-	overflow: scroll;
-	position: absolute;
-	top: 16px;
-	left: 32px;
-	z-index: 1000;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
 }
 
-a:hover>div>h1 {
+.InfoCard {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	width: 480px;
+	max-height: 256px;
+	display: inline-block;
+	background-color: #042049;
+	box-shadow: 0px 0px 75px -15px black;
+	color: #fff;
+	border-radius: 7.5px;
+	position: absolute;
+	overflow-y: scroll;
+	z-index: 100;
+	top: 105%;
+	left: 50%;
+  }
+  
+.InfoCard > h1 {
 	font-family: 'Anderson Grotesk';
 	font-size: 32px;
 	font-weight: 800;
 	color: white;
 	text-indent: 0pt;
-	margin: 10px;
+	margin: 16px;
 	padding: 0px;
 	line-height: normal;
 }
 
-a:hover>div>h2 {
+.InfoCard > h1 > a {
+	color: white;
+}
+
+.InfoCard > h2 {
 	font-family: 'Anderson Grotesk';
 	font-size: 28px;
 	font-weight: 400;
 	color: rgb(244, 245, 247);
 	text-indent: 0pt;
-	margin: 10px;
+	margin: 16px;
 	padding: 0px;
 	line-height: 100%;
 }
 
-a:hover>div>p {
+.InfoCard > p {
 	font-size: 16px;
 	font-weight: 500;
 	color: #CCC;/*rgb(80, 95, 121);*/
 	text-indent: 0pt;
-	margin: 10px;
+	margin: 16px;
 	padding: 0px;
 }
 
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
   background: #dfe1e5;
+  visibility: visible;
+}
+
+::-webkit-scrollbar {
+	visibility: visible;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -99,7 +114,6 @@ a:hover>div>p {
   border-radius: 12px;
 }
 
-/* set button(top and bottom of the scrollbar) */
 ::-webkit-scrollbar-button {
   display: none;
 }
