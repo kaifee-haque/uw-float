@@ -22,61 +22,63 @@
 	font-weight: 500;
 }
 
-a {
-	position: relative;
+.Course {
+	display: inline;
 }
 
-a>div {
-	display: none;
-	/*box-shadow: 0px 0px 3px black;*/
-	opacity: 0;
-	transition: opacity 1s;
-}
-a:hover>div {
+.Course:hover > .InfoCard {
+	visibility: visible;
 	opacity: 1;
-	background-color: #042049;
-	display: inline-block;
+}
+
+.InfoCard {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+
 	width: 480px;
 	height: 256px;
-	overflow: scroll;
+	background-color: #042049;
+	color: #fff;
+	border-radius: 6px;
+	padding: 5px 0;
 	position: absolute;
-	top: 16px;
-	left: 32px;
-	z-index: 1000;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-}
-
-a:hover>div>h1 {
+	overflow: scroll;
+	z-index: 100;
+	top: 100%;
+	left: 100%;
+	margin-left: -60px;
+  }
+  
+.InfoCard > h1 {
 	font-family: 'Anderson Grotesk';
 	font-size: 32px;
 	font-weight: 800;
 	color: white;
-	text-indent: 0pt;
+	/* text-indent: 0pt;
 	margin: 10px;
 	padding: 0px;
-	line-height: normal;
+	line-height: normal; */
 }
 
-a:hover>div>h2 {
+.InfoCard > h2 {
 	font-family: 'Anderson Grotesk';
 	font-size: 28px;
 	font-weight: 400;
 	color: rgb(244, 245, 247);
-	text-indent: 0pt;
+	/* text-indent: 0pt;
 	margin: 10px;
 	padding: 0px;
-	line-height: 100%;
+	line-height: 100%; */
 }
 
-a:hover>div>p {
+.InfoCard > p {
 	font-size: 16px;
 	font-weight: 500;
 	color: #CCC;/*rgb(80, 95, 121);*/
-	text-indent: 0pt;
+	/* text-indent: 0pt;
 	margin: 10px;
-	padding: 0px;
+	padding: 0px; */
 }
 
 ::-webkit-scrollbar {
@@ -99,7 +101,6 @@ a:hover>div>p {
   border-radius: 12px;
 }
 
-/* set button(top and bottom of the scrollbar) */
 ::-webkit-scrollbar-button {
   display: none;
 }
