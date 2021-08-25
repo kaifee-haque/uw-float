@@ -80,7 +80,7 @@ async function addInfoCard(link) {
 
 	// Course code
 	let title = document.createElement('H1');
-	title.innerHTML = course.code.match(/[a-z]+|[^a-z]+/gi).join(' ').toUpperCase();
+	title.appendChild(createAnchor("https://uwflow.com/course/" + course.code, course.code.match(/[a-z]+|[^a-z]+/gi).join(' ').toUpperCase()));
 	infoCard.append(title);
 	
 	// Full course name
