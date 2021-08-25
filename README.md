@@ -1,6 +1,6 @@
-# UW Float
+# UW Float <img src="extension/images/float_32.png" alt="Screenshot" title="Screenshot"/>
 
-## Intro
+## Intro 
 This Chrome extension allows you to view information about a course from UW Flow as a link preview on the UWaterloo Undergraduate Calendar pages.
 
 <img src="screenshots/screen1.png" alt="Screenshot" title="Screenshot"/>
