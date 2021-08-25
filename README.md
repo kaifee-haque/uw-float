@@ -16,7 +16,7 @@ This Chrome extension allows you to view information about a course from UW Flow
 🔲 Add prerequisites, corequisites and antirequisites \
 🔲 Change UI to match the visual style of UW Flow \
 🔲 Allow extension to support UW Flow URLs and run on any website \
-🔲 Make info card position dependent on screen borders \
+🔲 Make info card position dependent on screen borders
 
 <br/>
 This extension is not affiliated with the University of Waterloo or UW Flow.
