@@ -55,11 +55,13 @@ async function addInfoCard(link) {
 
 	// Course code
 	let title = document.createElement('H1');
+	title.classList.add('CourseCode');
 	title.appendChild(createAnchor("https://uwflow.com/course/" + course.code, course.code.match(/[a-z]+|[^a-z]+/gi).join(' ').toUpperCase()));
 	infoCard.append(title);
 	
 	// Full course name
 	let subtitle = document.createElement('H2');
+	subtitle.classList.add('CourseName');
 	subtitle.innerHTML = course.name;
 	infoCard.append(subtitle);
 	
@@ -89,6 +91,7 @@ function modifyLinks() {
 			addInfoCard(newLink);
 
 			oldLink.replaceWith(newLink);
+			newLink.parentElement.classList.add('LinkContainer');
 		}
 	}
 }

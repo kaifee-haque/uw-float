@@ -23,6 +23,10 @@
 	font-weight: 500;
 }
 
+.LinkContainer {
+	overflow: visible;
+}
+
 /* Info card */
 .Course {
 	display: inline;
@@ -48,31 +52,34 @@
 	border-radius: 7.5px;
 	position: absolute;
 	overflow-y: scroll;
-	z-index: 100;
+	z-index: 10000;
 	top: 105%;
 	left: 50%;
   }
   
-.InfoCard > h1 {
+.CourseCode {
 	font-family: 'Anderson Grotesk';
 	font-size: 32px;
 	font-weight: 800;
-	color: white;
+	color: white !important;
 	text-indent: 0pt;
 	margin: 16px;
 	padding: 0px;
 	line-height: normal;
 }
-
-.InfoCard > h1 > a {
-	color: white;
+.CourseCode > a:link {
+	color: white !important;
+	text-decoration: initial;
+}
+.CourseCode > a:visited {
+	color: white !important;
 }
 
-.InfoCard > h2 {
+.CourseName {
 	font-family: 'Anderson Grotesk';
 	font-size: 28px;
 	font-weight: 400;
-	color: rgb(244, 245, 247);
+	color: rgb(244, 245, 247) !important;
 	text-indent: 0pt;
 	margin: 16px;
 	padding: 0px;
@@ -81,6 +88,7 @@
 
 .InfoCard > p {
 	font-size: 16px;
+	font-family: 'Inter';
 	font-weight: 500;
 	color: #CCC;/*rgb(80, 95, 121);*/
 	text-indent: 0pt;
