@@ -34,31 +34,6 @@ function getCourseInfo(courseCode) {
 	return courseObj;
 }
 
-// Appends an info card to the course hyperlink.
-async function popup(link) {
-	let courseObj = await getCourseInfo(getCourseCode(link.firstChild.href));
-
-	// Preview card
-	let card = document.createElement('div');
-	link.appendChild(card);
-	card.removeAttribute('href');
-	
-	// Course code
-	let title = document.createElement('H1');
-	title.innerHTML = courseObj.code.match(/[a-z]+|[^a-z]+/gi).join(' ').toUpperCase();
-	card.appendChild(title);
-	
-	// Full course name
-	let subtitle = document.createElement('H2');
-	subtitle.innerHTML = courseObj.name;
-	card.appendChild(subtitle);
-	
-	// Course description
-	let description = document.createElement('p');
-	description.innerHTML = courseObj.description;
-	card.appendChild(description);
-}
-
 // Creates an anchor tag with the given url and text.
 //	(string) (string) -> (HTMLAnchorElement)
 //	url must be a valid URL.
