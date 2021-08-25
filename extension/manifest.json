@@ -10,8 +10,7 @@
     "content_scripts": [{
         "css": ["styles.css"],
         "js": ["content.js"],
-        "matches": ["http://ugradcalendar.uwaterloo.ca/*",
-					"https://ugradcalendar.uwaterloo.ca/*"],
+        "matches": ["<all_urls>"],
         "run_at": "document_start"
     }],
 	"web_accessible_resources": ["fonts/*"],
