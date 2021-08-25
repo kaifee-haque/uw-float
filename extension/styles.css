@@ -56,10 +56,10 @@
 	font-size: 32px;
 	font-weight: 800;
 	color: white;
-	/* text-indent: 0pt;
+	text-indent: 0pt;
 	margin: 10px;
 	padding: 0px;
-	line-height: normal; */
+	line-height: normal;
 }
 
 .InfoCard > h1 > a {
@@ -71,9 +71,9 @@
 	font-size: 28px;
 	font-weight: 400;
 	color: rgb(244, 245, 247);
-	/* text-indent: 0pt;
+	text-indent: 0pt;
 	margin: 10px;
-	padding: 0px; */
+	padding: 0px;
 	line-height: 100%;
 }
 
@@ -81,9 +81,9 @@
 	font-size: 16px;
 	font-weight: 500;
 	color: #CCC;/*rgb(80, 95, 121);*/
-	/* text-indent: 0pt;
+	text-indent: 0pt;
 	margin: 10px;
-	padding: 0px; */
+	padding: 0px;
 }
 
 ::-webkit-scrollbar {
