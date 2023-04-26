@@ -58,20 +58,25 @@ async function createInfoCard(anchor) {
 	infoCard.style.left = `${linkRect.left + window.scrollX}px`;
 	infoCard.style.top = `${linkRect.bottom + window.scrollY + 0}px`;
 
+	// Header
+	const header = document.createElement('div');
+	header.setAttribute('id', 'card-header');
+	infoCard.append(header)
+
 	// Course code
-	let title = document.createElement('H1');
+	const title = document.createElement('H1');
 	title.setAttribute('id', 'course-code');
 	title.appendChild(createAnchor("https://uwflow.com/course/" + course.code, course.code.match(/[a-z]+|[^a-z]+/gi).join(' ').toUpperCase()));
-	infoCard.append(title);
+	header.append(title);
 
 	// Full course name
-	let subtitle = document.createElement('H2');
+	const subtitle = document.createElement('H2');
 	subtitle.setAttribute('id', 'course-name');
 	subtitle.innerHTML = course.name;
-	infoCard.append(subtitle);
+	header.append(subtitle);
 
 	// Course description
-	let description = document.createElement('p');
+	const description = document.createElement('p');
 	description.innerHTML = course.description;
 	infoCard.append(description);
 
