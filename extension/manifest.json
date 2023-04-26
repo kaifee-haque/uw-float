@@ -1,19 +1,36 @@
 {
-    "manifest_version": 2,
- 
-    "name": "UW Float", 
+    "manifest_version": 3,
+    "name": "UW Float",
     "description": "UW Flow link previews",
-    "version": "0.2",
+    "version": "1.0",
     "author": "Kaifee Haque",
-
-	"permissions": ["https://uwflow.com/graphql"],
-    "content_scripts": [{
-        "css": ["styles.css"],
-        "js": ["content.js"],
-        "matches": ["<all_urls>"],
-        "run_at": "document_start"
-    }],
-	"web_accessible_resources": ["fonts/*"],
+    "host_permissions": [
+        "https://uwflow.com/graphql"
+    ],
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "fonts/*"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
     "icons": {
         "16": "images/float_16.png",
         "32": "images/float_32.png",
