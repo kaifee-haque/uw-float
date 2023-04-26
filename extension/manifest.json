@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "UW Float",
-    "description": "UW Flow link previews",
+    "description": "This Chrome extension allows you to view information about a course from UW Flow as a link preview on the UWaterloo Undergraduate Calendar pages.",
     "version": "1.0",
     "author": "Kaifee Haque",
     "host_permissions": [
