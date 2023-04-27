@@ -2,27 +2,27 @@
 @font-face {
 	font-family: 'Anderson Grotesk';
 	src: local('Anderson Grotesk UltraBold'),
-		url(chrome-extension://cafpogemfaanagmlejkgkgflcokkgjgh/fonts/AndersonGrotesk-Ultrabold.otf) format('opentype');
+		url(chrome-extension://ojcjolehoofgjkcilfecefhkgcdpbfpc/fonts/AndersonGrotesk-Ultrabold.otf) format('opentype');
 	font-weight: 800;
 }
 
 @font-face {
 	font-family: 'Anderson Grotesk';
 	src: local('Anderson Grotesk Bold'),
-		url(chrome-extension://cafpogemfaanagmlejkgkgflcokkgjgh/fonts/AndersonGrotesk-Bold.otf) format('opentype');
+		url(chrome-extension://ojcjolehoofgjkcilfecefhkgcdpbfpc/fonts/AndersonGrotesk-Bold.otf) format('opentype');
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Anderson Grotesk';
 	src: local('Anderson Grotesk'),
-		url(chrome-extension://cafpogemfaanagmlejkgkgflcokkgjgh/fonts/AndersonGrotesk.otf) format('opentype');
+		url(chrome-extension://ojcjolehoofgjkcilfecefhkgcdpbfpc/fonts/AndersonGrotesk.otf) format('opentype');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Inter';
-	src: local('Inter'), url(chrome-extension://cafpogemfaanagmlejkgkgflcokkgjgh/fonts/Inter-Regular.otf) format('opentype');
+	src: local('Inter'), url(chrome-extension://ojcjolehoofgjkcilfecefhkgcdpbfpc/fonts/Inter-Regular.otf) format('opentype');
 	font-weight: 500;
 }
 
@@ -39,7 +39,7 @@
 }
 
 #card-header {
-	background-image: url(chrome-extension://cafpogemfaanagmlejkgkgflcokkgjgh/images/background.svg);
+	background-image: url(chrome-extension://ojcjolehoofgjkcilfecefhkgcdpbfpc/images/background.svg);
 	background-size: cover;
 	padding-top: 8px;
 	padding-bottom: 8px;
